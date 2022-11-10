@@ -1,0 +1,13 @@
+#!/bin/bash
+guid=fd60b0de-3ed9-4f8a-9a0c-0fe5ace8673e
+datacenters=(8 16 24 32)
+machines=(1 2 3 4)
+vms=(101 102 103)
+
+for d in ${datacenters[@]}; do
+    for m in ${machines[@]}; do
+        for v in ${vms[@]}; do
+            printf "%s %s %s %s" "$guid" "$d" "$m" "$v"
+        done
+    done
+done
