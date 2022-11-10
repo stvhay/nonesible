@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# STUB
+echo "This is a stub: " $1 / $2 / $3 / $4
